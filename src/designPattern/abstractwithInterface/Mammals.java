@@ -72,10 +72,10 @@ interface MammalEnumList {
     String getSpecies();
 }
 
-enum Feline implements MammalEnumList {
+enum Ape implements MammalEnumList {
     HUMAN("인간"), CHIMPANZEE("침팬지"), GORILLA("고릴라");
     private final String species;
-    Feline(String species) { this.species = species; }
+    Ape(String species) { this.species = species; }
     public String getSpecies() {
         return species;
     }
@@ -90,7 +90,7 @@ enum Murine implements MammalEnumList {
 }
 
 enum MammalFamily {
-    CAT("고양이과", List.of(Feline.HUMAN, Feline.CHIMPANZEE, Feline.GORILLA)),
+    CAT("고양이과", List.of(Ape.HUMAN, Ape.CHIMPANZEE, Ape.GORILLA)),
     RAT("말과", List.of(Murine.MOUSE, Murine.SQUIRREL, Murine.HAMSTER, Murine.GUINEA_PIG)),
     UNKNOWN("괴물", Collections.EMPTY_LIST);
 

@@ -5,7 +5,7 @@ public class MainClient {
         AnimalDictionary dictionary = new AnimalDictionary();
 
         Mammals mammals = new Human();
-        MammalEnumList mammalList = Feline.CHIMPANZEE;
+        MammalEnumList mammalList = Ape.CHIMPANZEE;
         dictionary.wantToKnowAbout(mammals);
         mammals.setSpecies(mammalList);
         dictionary.onSearch();
