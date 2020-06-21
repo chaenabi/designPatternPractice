@@ -90,8 +90,8 @@ enum Murine implements MammalEnumList {
 }
 
 enum MammalFamily {
-    CAT("고양이과", List.of(Ape.HUMAN, Ape.CHIMPANZEE, Ape.GORILLA)),
-    RAT("말과", List.of(Murine.MOUSE, Murine.SQUIRREL, Murine.HAMSTER, Murine.GUINEA_PIG)),
+    HUMAN("인류", List.of(Ape.HUMAN, Ape.CHIMPANZEE, Ape.GORILLA)),
+    RAT("쥐과", List.of(Murine.MOUSE, Murine.SQUIRREL, Murine.HAMSTER, Murine.GUINEA_PIG)),
     UNKNOWN("괴물", Collections.EMPTY_LIST);
 
     private final String familyName;
@@ -110,7 +110,7 @@ enum MammalFamily {
 
     boolean includes(MammalEnumList species) {
         return animalSpeciesList.stream()
-                                .anyMatch(name -> name.equals(species));
+                                .anyMatch(species::equals);
     }
 
     String getFamilyName() { return familyName; }
