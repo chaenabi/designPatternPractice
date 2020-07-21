@@ -7,7 +7,7 @@ public class MyProxyProgram {
 
     public static void main(String[] args) {
 
-        List<Thumnail> list = new ArrayList<>();
+       /* List<Thumnail> list = new ArrayList<>();
 
         list.add(new ProxyThumnail("Git 강좌", "/git.mp4"));
         list.add(new ProxyThumnail("Rest API란?", "/rest-api.mp4"));
@@ -24,7 +24,8 @@ public class MyProxyProgram {
         list.get(1).showPreview();
         list.get(0).showPreview();
         list.get(2).showPreview();
-        list.get(3).showPreview();
+        list.get(3).showPreview();*/
+
 
     }
 
